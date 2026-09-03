@@ -1,6 +1,6 @@
 import { Headphones, MessageCircle, MapPin } from 'lucide-react'
 import { brands } from '../data/brands'
-import { getWhatsAppLink, SITE } from '../config/site'
+import { getWhatsAppLink, LOCATION_URL, SITE } from '../config/site'
 
 const QUICK_LINKS = [
   { label: 'Home', href: '#home' },
@@ -66,9 +66,16 @@ export default function Footer() {
                   WhatsApp
                 </a>
               </li>
-              <li className="flex items-center gap-2 text-sm text-navy-100/60">
-                <MapPin className="h-4 w-4 shrink-0" aria-hidden="true" />
-                {SITE.city}
+              <li>
+                <a
+                  href={LOCATION_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 text-sm text-navy-100/60 transition-colors hover:text-white"
+                >
+                  <MapPin className="h-4 w-4 shrink-0" aria-hidden="true" />
+                  {SITE.city}
+                </a>
               </li>
             </ul>
           </div>

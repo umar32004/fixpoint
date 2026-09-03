@@ -4,7 +4,8 @@
  */
 
 export const WHATSAPP_NUMBER = '923336461812' // Format: 92XXXXXXXXXX (no +, no spaces)
-export const PHONE_NUMBER = '03XXXXXXXXX' // Replace with real phone number
+export const PHONE_NUMBER = '+923336461812'
+export const LOCATION_URL = 'https://share.google/nhjdNpbHN5UdlfyyU'
 
 export const SITE = {
   name: 'FixPoint',

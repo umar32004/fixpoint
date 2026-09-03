@@ -1,5 +1,5 @@
 import { MessageCircle, Phone, MapPin, Send } from 'lucide-react'
-import { getWhatsAppLink, PHONE_NUMBER, SITE } from '../config/site'
+import { getWhatsAppLink, LOCATION_URL, PHONE_NUMBER, SITE } from '../config/site'
 import Reveal from './Reveal'
 
 export default function Contact() {
@@ -20,7 +20,7 @@ export default function Contact() {
           <div className="mt-12 grid grid-cols-1 gap-4 sm:grid-cols-3">
             <ContactCard icon={MessageCircle} label="WhatsApp" value="Chat with us" href={getWhatsAppLink()} external />
             <ContactCard icon={Phone} label="Phone" value={PHONE_NUMBER} href={`tel:${PHONE_NUMBER}`} />
-            <ContactCard icon={MapPin} label="Location" value={SITE.city} />
+            <ContactCard icon={MapPin} label="Location" value={SITE.city} href={LOCATION_URL} external />
           </div>
         </Reveal>
 
