@@ -4,6 +4,7 @@ import Hero from './components/Hero'
 import TrustBar from './components/TrustBar'
 import Services from './components/Services'
 import Brands from './components/Brands'
+import WarrantyNotice from './components/WarrantyNotice'
 import RepairForm from './components/RepairForm'
 import HowItWorks from './components/HowItWorks'
 import TechVisual from './components/TechVisual'
@@ -22,6 +23,7 @@ export default function App() {
         <TrustBar />
         <Services />
         <Brands />
+        <WarrantyNotice />
         <RepairForm />
         <HowItWorks />
         <TechVisual />
