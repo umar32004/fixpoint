@@ -1,4 +1,4 @@
-import { Wrench, MessageSquareText, Layers, SearchCheck, MessageCircle, MapPin } from 'lucide-react'
+import { Wrench, SearchCheck, PiggyBank, Handshake, ClipboardCheck, CalendarClock } from 'lucide-react'
 import { brands } from '../data/brands'
 import { services } from '../data/services'
 import { problemCategories } from '../data/problems'
@@ -7,34 +7,34 @@ import Reveal from './Reveal'
 
 const REASONS = [
   {
-    title: 'Specialized Earbud Repairs',
-    description: 'We focus specifically on wireless earbuds, earphones and charging cases.',
+    title: 'Specialized Repair',
+    description: 'Expertise in common TWS earbud issues.',
     icon: Wrench,
   },
   {
-    title: 'Transparent Communication',
-    description: 'We explain what we find during diagnosis before any repair work begins.',
-    icon: MessageSquareText,
-  },
-  {
-    title: 'Multiple Brands Supported',
-    description: 'Experience across popular brands including ZERO, Audionic and Tech Hunk.',
-    icon: Layers,
-  },
-  {
-    title: 'Professional Diagnosis',
-    description: 'Every repair starts with identifying the actual fault, not guesswork.',
+    title: 'Proper Diagnosis',
+    description: 'We identify the problem before repair.',
     icon: SearchCheck,
   },
   {
-    title: 'Convenient WhatsApp Support',
-    description: 'Reach us easily and get updates through WhatsApp, wherever you are.',
-    icon: MessageCircle,
+    title: 'Save Money',
+    description: 'Repair instead of buying a new pair.',
+    icon: PiggyBank,
   },
   {
-    title: 'Karachi-Based Service',
-    description: 'A local service that understands the earbud models common in the city.',
-    icon: MapPin,
+    title: 'Honest Service',
+    description: 'Clear repair details and pricing.',
+    icon: Handshake,
+  },
+  {
+    title: 'Quality Testing',
+    description: 'Every repair is tested before delivery.',
+    icon: ClipboardCheck,
+  },
+  {
+    title: '7–10 Day Warranty',
+    description: 'Checking warranty on eligible repairs.',
+    icon: CalendarClock,
   },
 ]
 
@@ -57,7 +57,8 @@ export default function WhyFixpoint() {
             Why Choose FixPoint?
           </h2>
           <p className="mt-4 text-base text-navy-700/80 sm:text-lg">
-            A focused, transparent approach to earbud and earphone repair.
+            We provide reliable and affordable TWS earbud repair services to help you repair,
+            restore, and reuse &mdash; instead of replacing.
           </p>
         </Reveal>
 
@@ -86,6 +87,12 @@ export default function WhyFixpoint() {
               <StatTile key={stat.label} {...stat} />
             ))}
           </div>
+        </Reveal>
+
+        <Reveal delay={220}>
+          <p className="mt-14 text-center font-display text-xl font-bold tracking-tight text-navy-900 sm:text-2xl">
+            FixPoint &mdash; Give Your Earbuds a Second Life.
+          </p>
         </Reveal>
       </div>
     </section>
