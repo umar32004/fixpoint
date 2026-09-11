@@ -1,4 +1,4 @@
-import { Headphones, MessageCircle, MapPin } from 'lucide-react'
+import { MessageCircle, MapPin } from 'lucide-react'
 import { brands } from '../data/brands'
 import { getWhatsAppLink, LOCATION_URL, SITE } from '../config/site'
 
@@ -18,8 +18,8 @@ export default function Footer() {
         <div className="grid grid-cols-1 gap-10 border-b border-white/10 pb-12 sm:grid-cols-2 lg:grid-cols-4">
           <div>
             <a href="#home" className="flex items-center gap-2.5" aria-label="FixPoint home">
-              <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-white/10 text-accent-400">
-                <Headphones className="h-5 w-5" aria-hidden="true" />
+              <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-white p-1">
+                <img src="/logo-icon.png" alt="" className="h-full w-full object-contain" />
               </span>
               <span className="font-display text-lg font-bold text-white">FIXPOINT</span>
             </a>

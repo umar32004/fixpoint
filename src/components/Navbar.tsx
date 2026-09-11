@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { Headphones, Menu, X, MessageCircle } from 'lucide-react'
+import { Menu, X, MessageCircle } from 'lucide-react'
 import { getWhatsAppLink } from '../config/site'
 
 const NAV_LINKS = [
@@ -44,9 +44,7 @@ export default function Navbar() {
         }`}
       >
         <a href="#home" className="flex items-center gap-2.5 font-display" aria-label="FixPoint home">
-          <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-navy-900 text-accent-400">
-            <Headphones className="h-5 w-5" strokeWidth={2.2} aria-hidden="true" />
-          </span>
+          <img src="/logo-icon.png" alt="FixPoint" className="h-9 w-auto sm:h-10" />
           <span className="text-lg font-bold tracking-tight text-navy-900">FIXPOINT</span>
         </a>
 
