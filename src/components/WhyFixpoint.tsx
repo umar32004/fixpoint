@@ -43,7 +43,7 @@ const totalProblems = problemCategories.reduce((sum, c) => sum + c.problems.leng
 
 const STATS = [
   { label: 'Repair Services', value: services.length, suffix: '' },
-  { label: 'Brands Supported', value: brands.length, suffix: '' },
+  { label: 'Brands Supported', value: 1, suffix: '' },
   { label: 'Models Recognized', value: totalModels, suffix: '+' },
   { label: 'Problems Diagnosed', value: totalProblems, suffix: '+' },
 ]
