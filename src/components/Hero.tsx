@@ -30,12 +30,15 @@ export default function Hero() {
           </span>
 
           <h1 className="mt-6 text-4xl font-bold leading-[1.1] tracking-tight text-white sm:text-5xl lg:text-6xl">
-            Expert Earbuds Repair in Karachi
+            We Fix Your Earbuds.
+            <br />
+            You Get Your Sound Back.
           </h1>
 
           <p className="mt-6 max-w-xl text-base leading-relaxed text-navy-100/80 sm:text-lg">
-            From charging problems to battery issues, sound faults and damaged earbuds &mdash;
-            FixPoint brings your earphones back to life.
+            Professional repair assessment for Pakistani online-brand earbuds and local-market TWS
+            earbuds. Tell us the brand, model and problem &mdash; we will inspect the unit and
+            advise the repair.
           </p>
 
           <div className="mt-9 flex flex-col gap-3.5 sm:flex-row">
