@@ -6,7 +6,9 @@ const NAV_LINKS = [
   { label: 'Home', href: '#home' },
   { label: 'Services', href: '#services' },
   { label: 'Brands', href: '#brands' },
+  { label: 'Warranty', href: '#warranty' },
   { label: 'How It Works', href: '#how-it-works' },
+  { label: 'Why FixPoint', href: '#why-fixpoint' },
   { label: 'FAQs', href: '#faqs' },
   { label: 'Contact', href: '#contact' },
 ]
@@ -48,12 +50,12 @@ export default function Navbar() {
           <span className="text-lg font-bold tracking-tight text-navy-900">FIXPOINT</span>
         </a>
 
-        <ul className="hidden items-center gap-8 lg:flex">
+        <ul className="hidden items-center gap-5 xl:flex">
           {NAV_LINKS.map((link) => (
             <li key={link.href}>
               <a
                 href={link.href}
-                className="text-sm font-medium text-navy-700 transition-colors hover:text-accent-600"
+                className="whitespace-nowrap text-sm font-medium text-navy-700 transition-colors hover:text-accent-600"
               >
                 {link.label}
               </a>
@@ -61,7 +63,7 @@ export default function Navbar() {
           ))}
         </ul>
 
-        <div className="hidden items-center gap-3 lg:flex">
+        <div className="hidden items-center gap-3 xl:flex">
           <a
             href={getWhatsAppLink()}
             target="_blank"
@@ -82,7 +84,7 @@ export default function Navbar() {
 
         <button
           type="button"
-          className="btn-focus flex h-10 w-10 items-center justify-center rounded-lg text-navy-900 lg:hidden"
+          className="btn-focus flex h-10 w-10 items-center justify-center rounded-lg text-navy-900 xl:hidden"
           aria-label={menuOpen ? 'Close menu' : 'Open menu'}
           aria-expanded={menuOpen}
           aria-controls="mobile-menu"
@@ -94,7 +96,7 @@ export default function Navbar() {
 
       <div
         id="mobile-menu"
-        className={`grid overflow-hidden transition-all duration-300 ease-in-out lg:hidden ${
+        className={`grid overflow-hidden transition-all duration-300 ease-in-out xl:hidden ${
           menuOpen ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'
         }`}
       >
